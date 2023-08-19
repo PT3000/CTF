@@ -11,4 +11,5 @@
 ## 백엔드
 
 * Spring Security
-  * jwt 활용   
+  * jwt
+   * ㅇㄹ    
