@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './layout/Header';
+import Footer from './layout/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    
-  <Header>
+    <Header />
     <App />
-  </Header>
-    
+    <Footer />
   </React.StrictMode>
 );
 
