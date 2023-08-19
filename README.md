@@ -11,5 +11,5 @@
 ## 백엔드
 
 * Spring Security
-  * jwt
-    * ㅇㅇㅇ    
+  * JWT
+  * Oauth 2.0    
