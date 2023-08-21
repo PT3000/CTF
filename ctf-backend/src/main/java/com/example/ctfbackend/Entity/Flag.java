@@ -1,2 +1,4 @@
-package com.example.ctfbackend.Entity;public class Flag {
+package com.example.ctfbackend.Entity;
+
+public class Flag {
 }
