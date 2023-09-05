@@ -1,17 +1,18 @@
-import React, {useState} from 'react';
+import React,{useState} from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import BasicModal from '../components/Modal/modal';
+import LoginModal from '../pages/login';
 
 const Header = () => {
-    const [open,setOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
 
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
-    return (
-      <div>
+  const handleLoginOpen = () => setLoginOpen(true);
+  const handleLoginClose = () => setLoginOpen(false);
+
+  return (
+    <div>
         <Navbar expand="lg" className="bg-body-tertiary">
           <Container>
             <Navbar.Brand href="#home">CTF</Navbar.Brand>
@@ -29,9 +30,9 @@ const Header = () => {
                 <Nav.Link href="#link">About</Nav.Link>
               </Nav>
               <Nav>
-                <Nav.Link onClick={handleOpen}>Register</Nav.Link>
-                <Nav.Link onClick={handleOpen}>Login</Nav.Link>
-                <BasicModal open={open} handleClose={handleClose} />
+                <Nav.Link>Register</Nav.Link>
+                <Nav.Link onClick={handleLoginOpen}>Login</Nav.Link>
+                <LoginModal open={loginOpen} onClose={handleLoginClose}/>
               </Nav>
               </Navbar.Collapse>
           </Container>
