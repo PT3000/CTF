@@ -15,18 +15,18 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal({open, handleClose}) {
+function BasicModal({open, onClose, children}) {
     return (
     <div>
       <Modal
         open={open}
-        onClose={handleClose}
+        onClose={onClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+            Text in a modal{children}
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
@@ -36,3 +36,5 @@ export default function BasicModal({open, handleClose}) {
     </div>
   );
 }
+
+export default BasicModal;
