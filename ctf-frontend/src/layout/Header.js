@@ -4,12 +4,18 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import LoginModal from '../pages/login';
+import RegisterModal from '../pages/register';
 
 const Header = () => {
   const [loginOpen, setLoginOpen] = useState(false);
 
   const handleLoginOpen = () => setLoginOpen(true);
   const handleLoginClose = () => setLoginOpen(false);
+
+  const [registerOpen, setRegisterOpen] = useState(false);
+
+  const handleRegisterOpen = () => setRegisterOpen(true);
+  const handleRegisterClose = () => setRegisterOpen(false);
 
   return (
     <div>
@@ -30,9 +36,10 @@ const Header = () => {
                 <Nav.Link href="#link">About</Nav.Link>
               </Nav>
               <Nav>
-                <Nav.Link>Register</Nav.Link>
+                <Nav.Link onClick={handleRegisterOpen}>Register</Nav.Link>
                 <Nav.Link onClick={handleLoginOpen}>Login</Nav.Link>
                 <LoginModal open={loginOpen} onClose={handleLoginClose}/>
+                <RegisterModal open={registerOpen} onClose={handleRegisterClose}/>
               </Nav>
               </Navbar.Collapse>
           </Container>
