@@ -26,7 +26,6 @@ const InputDesign = {
   height:'5vh',
   borderRadius:'30px',
   border:'0',
-
 }
 
 const AuthForm = {
@@ -45,6 +44,15 @@ const AuthDesign = {
 const IconDesign = {
   width:"36px",
   height:"40px",
+  margin:'auto'
+}
+
+const ButtonDesign = {
+  fontSize:"20px",
+  color:"white",
+  backgroundColor:"black",
+  padding:'15px 60px',
+  display:'flex',
   margin:'auto'
 }
 
@@ -78,7 +86,7 @@ return (
             <div style={TextForm}>
               <input style={InputDesign} type="password" />
             </div>
-            <button style={{fontSize:"20px",color:"white",backgroundColor:"black",padding:'15px 60px',display:'flex',margin:'auto'}}>login</button>
+            <button style={ButtonDesign}>login</button>
           </Typography>
           </Box>
     </Modal>
