@@ -2,15 +2,16 @@ import React from 'react';
 import Modal from '../components/Modal/modal'
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
-import kakao from '../assets/kakao-talk.png'
-import google from '../assets/google.png'
-import apple from '../assets/apple.png'
-import github from '../assets/github.png'
+import kakao from '../assets/kakao-talk.png';
+import google from '../assets/google.png';
+import apple from '../assets/apple.png';
+import github from '../assets/github.png';
 
 const login = ({open,onClose}) => {
 
 const style = {
   height : 420,
+  width: 450,
 }
 
 const TextForm = {
@@ -86,7 +87,7 @@ return (
             <div style={TextForm}>
               <input style={InputDesign} type="password" />
             </div>
-            <button style={ButtonDesign}>login</button>
+            <button style={ButtonDesign}>Login</button>
           </Typography>
           </Box>
     </Modal>

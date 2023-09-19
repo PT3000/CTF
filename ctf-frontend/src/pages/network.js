@@ -3,7 +3,7 @@ import Modal from '../components/Modal/modal'
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 
-const web = ({open,onClose}) => {
+const network = ({open,onClose}) => {
 
     const style = {
         width: 1600,
@@ -19,7 +19,7 @@ const web = ({open,onClose}) => {
         >
         <Box sx={style}>
             <Typography id="modal-modal-title" variant="h3" component="h2" align="center">
-                Web
+                Network
             </Typography>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                
@@ -29,4 +29,4 @@ const web = ({open,onClose}) => {
     )
 }
 
-export default web;
+export default network;

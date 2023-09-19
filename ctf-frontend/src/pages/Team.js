@@ -3,7 +3,7 @@ import Modal from '../components/Modal/modal'
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 
-const register = ({open,onClose}) => {
+const Team = ({open,onClose}) => {
 
 const style = {
   width: 420,
@@ -42,30 +42,14 @@ return (
         onClose={onClose}>
           <Box sx={style}>
             <Typography id="modal-modal-title" variant="h3" component="h2" align="center">
-              Register
+              Team
             </Typography>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              <div style={TextForm}>
-                <p style={{marginRight:'350px'}}>email</p>
-                <input style={InputDesign} type="text" />
-              </div>
-              <div style={TextForm}>
-                <p style={{marginRight:'325px'}}>nickname</p>
-                <input style={InputDesign} type="text" />
-              </div>
-              <div style={TextForm}>
-              <p style={{marginRight:'320px'}}>password</p>
-                <input style={InputDesign} type="text" />
-              </div>
-              <div style={TextForm}>
-              <p style={{marginRight:'306px'}}>repassword</p>
-                <input style={InputDesign} type="text" />
-              </div>
-              <button style={ButtonDesign}>Register</button>
+              
             </Typography>
           </Box>
         </Modal>
     )
 }
 
-export default register;
+export default Team;

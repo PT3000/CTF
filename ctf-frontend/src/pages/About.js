@@ -3,10 +3,10 @@ import Modal from '../components/Modal/modal'
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 
-const web = ({open,onClose}) => {
+const About = ({open,onClose}) => {
 
     const style = {
-        width: 1600,
+        width: 800,
         height : 700,
         overflowY: 'auto',
     }
@@ -19,7 +19,7 @@ const web = ({open,onClose}) => {
         >
         <Box sx={style}>
             <Typography id="modal-modal-title" variant="h3" component="h2" align="center">
-                Web
+                About
             </Typography>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                
@@ -29,4 +29,4 @@ const web = ({open,onClose}) => {
     )
 }
 
-export default web;
+export default About;
