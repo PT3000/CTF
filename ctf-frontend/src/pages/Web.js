@@ -1,10 +1,16 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import Modal from '../components/Modal/modal'
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 import '../css/card.css'
+import ChallengeModal from '../components/Modal/challengeModal';
 
 const web = ({open,onClose}) => {
+
+    const [challengeOpen, setChallengeOpen] = useState(false);
+
+    const handleChallengeOpen = () => setChallengeOpen(true);
+    const handleChallengeClose = () => setChallengeOpen(false);
 
     const style = {
         width: 1150,
@@ -24,7 +30,7 @@ const web = ({open,onClose}) => {
             </Typography>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                 <div className="grid">
-                    <div className="CardContainer">
+                    <div onClick={handleChallengeOpen} className="CardContainer">
                         web1
                     </div>
                     <div className="CardContainer">
@@ -54,7 +60,8 @@ const web = ({open,onClose}) => {
                 </div>
             </Typography>
         </Box>
-        </Modal>
+        <ChallengeModal open={challengeOpen} onClose={handleChallengeClose}></ChallengeModal>
+    </Modal>
     )
 }
 
