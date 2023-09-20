@@ -6,7 +6,7 @@ import { Box } from '@mui/material';
 const misc = ({open,onClose}) => {
 
     const style = {
-        width: 1600,
+        width: 1150,
         height : 700,
         overflowY: 'auto',
     }

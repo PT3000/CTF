@@ -6,7 +6,7 @@ import { Box } from '@mui/material';
 const crypto = ({open,onClose}) => {
 
     const style = {
-        width: 1600,
+        width: 1150,
         height : 700,
         overflowY: 'auto',
     }
@@ -22,7 +22,41 @@ const crypto = ({open,onClose}) => {
                 Crypto
             </Typography>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-               
+            <div className="grid">
+                    <div className="CardContainer">
+                        fdfdssd
+                    </div>
+                    <div className="CardContainer">
+                        fdfdssd
+                    </div>
+                    <div className="CardContainer">
+                        fdfdssd
+                    </div>
+                    <div className="CardContainer">
+                        fdfdssd
+                    </div>
+                    <div className="CardContainer">
+                        fdfdssd
+                    </div>
+                    <div className="CardContainer">
+                        fdfdssd
+                    </div>
+                    <div className="CardContainer">
+                        fdfdssd
+                    </div>
+                    <div className="CardContainer">
+                        fdfdssd
+                    </div>
+                    <div className="CardContainer">
+                        fdfdssd
+                    </div>
+                    <div className="CardContainer">
+                        fdfdssd
+                    </div>
+                    <div className="CardContainer">
+                        fdfdssd
+                    </div>
+                </div>
             </Typography>
         </Box>
         </Modal>

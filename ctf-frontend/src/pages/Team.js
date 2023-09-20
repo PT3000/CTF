@@ -6,34 +6,9 @@ import { Box } from '@mui/material';
 const Team = ({open,onClose}) => {
 
 const style = {
-  width: 420,
-  height: 540,
-}
-
-const TextForm = {
-  display: 'flex',
-  justifyContent: 'center',
-  flexDirection: 'column',
-  alignItems: 'center',
-  height: '10vh',
-  marginTop:'0.1vh',
-}
-
-const InputDesign = {
-  width:'41vh',
-  height:'5vh',
-  borderRadius:'30px',
-  border:'0',
-}
-
-const ButtonDesign = {
-  fontSize:"20px",
-  color:"white",
-  backgroundColor:"black",
-  padding:'15px 60px',
-  display:'flex',
-  margin:'auto',
-  marginTop:'15px'
+    width: 1000,
+    height : 700,
+    overflowY: 'auto',
 }
 
 return (
@@ -45,7 +20,7 @@ return (
               Team
             </Typography>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              
+            
             </Typography>
           </Box>
         </Modal>

@@ -1,0 +1,22 @@
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    @media screen and (max-width: 718px) {
+      gap: 3px;
+    }
+  }
+
+  .CardContainer {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color:  rgb(104, 102, 102);
+    color: white;
+    text-align: center;
+    line-height: 190px;
+    font-size: 1.5em;
+  }
+

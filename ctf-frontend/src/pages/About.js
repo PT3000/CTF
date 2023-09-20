@@ -22,7 +22,7 @@ const About = ({open,onClose}) => {
                 About
             </Typography>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-               
+            https://codepen.io/danielwaltz/pen/DZOEdN
             </Typography>
         </Box>
         </Modal>
